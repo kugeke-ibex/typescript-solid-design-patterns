@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: typescript-solid-design-patterns
+    build:
+      context: .
+      dockerfile: ../node/Dockerfile
+    volumes:
+      - type: bind
+        source: "../../"
+        target: "/app"
+        consistency: cached
+    command:
+      /bin/sh -c "while sleep 1000; do :; done"
+      /bin/bash
+    ports:
+      - 3000:3000
+    tty: true
