@@ -1,2 +1,5 @@
 # Macのフォルダやファイルに関するmeta情報
 .DS_Store
+
+# node_modules
+**/node_modules
