@@ -1,0 +1,11 @@
+@startuml
+
+'クラスやオブジェクト間のやり取りを時間軸に沿って表したず'
+'振る舞いを表す'
+
+Client -> Server: APIリクエスト
+Server -> Database: データ読み込み
+Database -> Server:
+Server -> Client:
+
+@enduml
