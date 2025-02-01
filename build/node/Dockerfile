@@ -20,6 +20,12 @@ RUN apt-get update && \
     wget \
     sudo \
     ssh \
+    plantuml \
+    graphviz \
+    graphviz-dev \
+    default-jre \
+    fonts-ipafont \
+    openjdk-17-jdk \
     && \
     rm -rf /var/lib/apt/lists/*
 EXPOSE 3000

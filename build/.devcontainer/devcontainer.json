@@ -66,7 +66,8 @@
                 "stylelint.vscode-stylelint",
                 "VisualStudioExptTeam.vscodeintellicode",
                 "vscode-icons-team.vscode-icons",
-                "wix.vscode-import-cost"
+                "wix.vscode-import-cost",
+                "jebbs.plantuml"
             ],
             // VSCodeの設定を記述 .vscodeフォルダの代わりになる（らしい）
             "settings": {
