@@ -8,6 +8,7 @@ class クラス名 {
   ~ メソッド2()
 }
 
+'継承
 class 社員 {
   社員番号: string
   勤怠を入力する()
@@ -20,6 +21,74 @@ class エンジニア extends 社員 {
 class デザイナー extends 社員 {
   デザイン()
 }
+
+'抽象'
+abstract class 従業員 {
+  社員番号
+  勤怠を入力する()
+  働く()
+}
+
+class プログラマー extends 従業員 {
+  働く()
+}
+
+class 営業 extends 従業員 {
+  働く()
+}
+
+'インターフェース'
+interface 乗り物 {
+  残燃料
+  走る()
+}
+
+class 車 implements 乗り物 {
+  残燃料
+  走る()
+}
+
+class 飛行機 implements 乗り物 {
+  残燃料
+  走る()
+}
+
+'集約'
+class BookShelf {
+  books: Book[]
+}
+
+class Book {
+  category: Category
+}
+
+class Category {
+  name: string
+}
+
+BookShelf o-> Book
+Book o-> Category
+
+'関連'
+
+class 工場 {
+
+}
+
+class 製品 {
+
+}
+
+class ユーザー {
+
+}
+
+class 商品 {
+
+}
+
+工場 --> 製品 : 生成する
+ユーザー --> 商品 : 注文する
 
 @enduml
 
