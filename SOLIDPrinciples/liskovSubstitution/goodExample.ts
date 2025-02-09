@@ -12,7 +12,6 @@ class Rectangle implements Shape {
         this.width = width;
     }
 
-
     setHeight(height: number) {
         this.height = height;
     }
