@@ -6,6 +6,7 @@
   - Factory Method
   - Prototype
   - Singleton
+  
 - オブジェクトの構成に関するパターン
   - Adapter
   - Bridge
