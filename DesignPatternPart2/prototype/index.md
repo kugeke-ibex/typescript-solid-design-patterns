@@ -17,7 +17,7 @@
   - インターフェースもしくは抽象クラス
   - インスタンスをコピーして新しいインスタンスを作るためのメソッドを定める
 
-- ConcreteProtoype
+- ConcretePrototype
   - Prototypeを実装(継承)する子クラス
   - Prototypeで定義されたコピー用のメソッドを実装する
 
