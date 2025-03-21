@@ -81,9 +81,11 @@ class YearExpression implements AbstractExpression {
 
 function run() {
     const now = new Date();
-    const expression = "MM/DD/YYYY";
+    const expression = "YYYY-MM-DD";
+    const expression2 = "MM/DD/YYYY";
 
     const context = new Context(expression, now);
+    const context2 = new Context(expression2, now);
     const yearExpression = new YearExpression();
     const monthExpression = new MonthExpression();
     const dayExpression = new DayExpression();
@@ -92,8 +94,10 @@ function run() {
     yearExpression.setChild(monthExpression);
 
     const result = yearExpression.interpret(context);
+    const result2 = yearExpression.interpret(context2);
     console.log(now.toLocaleDateString());
     console.log(result.expression);
+    console.log(result2.expression);
 }
 
 run();
